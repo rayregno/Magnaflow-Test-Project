@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #faf4f2;
+}
+
+.top {
+  background: url("../assets/bg.png") no-repeat;
+  background-position: center top;
+  background-color: #faf4f2;
+}
+
+.top header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 10%;
+}
+
+.top .logo {
+  cursor: pointer;
+  padding-right: 30px;
+}
+
+.top .nav_links {
+  list-style: none;
+}
+
+.top .nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.top li, .top a, .top button {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.top .nav_links li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.top .nav_links li a:hover {
+  color: #e76f51;
+}
+
+.top .login {
+  margin-left: auto;
+}
+
+.top .signin button {
+  padding: 9px 25px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+.top .signin button:hover {
+  background-color: rgba(0, 135, 169, 0.8);
+}
+
+.top .callToAction {
+  width: 600px;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top .callToAction h1 {
+  margin-top: 300px;
+  text-align: center;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 75px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.top .callToAction p {
+  text-align: center;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Sawarabi Gothic", sans-serif;
+  color: white;
+  line-height: 30px;
+}
+
+.top .discover {
+  display: block;
+}
+
+.top .discover button {
+  margin-top: 30px;
+  margin-bottom: 200px;
+  padding: 9px 60px;
+  border: none;
+  background-color: #e76f51;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.top .discover button:hover {
+  background-color: rgba(253, 121, 88, 0.8);
+}
+
+.top .outsideStuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top .outsideThing {
+  border-radius: 20px;
+  background-color: white;
+  margin: 15px;
+  margin-bottom: 50px;
+  width: 357px;
+  padding: 20px;
+  line-height: 25px;
+  position: relative;
+}
+
+.top .outsideThingImg {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.top .outsideThing h4 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.top .outsideThing p {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.explore {
+  background: url("../assets/background-curve.png") no-repeat;
+  background-position: center;
+  background-color: #faf4f2;
+}
+
+.explore .exploreHeader {
+  width: 300px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.explore .exploreHeaderImg {
+  display: block;
+  text-align: center;
+}
+
+.explore .exploreHeader h1 {
+  margin-top: 20px;
+  font-family: "Archivo Black", sans-serif;
+  color: #3b3735;
+  text-align: center;
+}
+
+.explore .exploreStuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.explore .exploreThing {
+  background: white;
+  margin: 10px;
+  border-radius: 20px;
+  padding: 20px;
+  line-height: 25px;
+  position: relative;
+}
+
+.explore .exploreThingImg {
+  margin-bottom: 30px;
+}
+
+.explore .exploreThingPrice {
+  padding-top: 10px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: white;
+  color: #e76f51;
+  position: absolute;
+  top: 180px;
+  left: 94px;
+  width: 150px;
+}
+
+.explore .exploreThingLike {
+  position: absolute;
+  top: 10%;
+  right: 16%;
+}
+
+.explore .exploreThing h3 {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.explore .exploreThingDetails {
+  width: 300px;
+}
+
+.explore .exploreThing p {
+  font-family: "Sawarabi Gothic", sans-serif;
+}
+
+.explore .readMore button {
+  margin-top: 30px;
+  padding: 9px 30px;
+  border: none;
+  background-color: #f3f3f3;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.explore .readMore button:hover {
+  background-color: rgba(164, 164, 164, 0.8);
+}
+
+.explore .exploreFooter {
+  width: 300px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.explore .exploreFooter {
+  text-align: center;
+}
+
+.explore .viewAllDestinations button {
+  margin-top: 30px;
+  padding: 9px 30px;
+  border: solid;
+  border-color: #e76f51;
+  color: #e76f51;
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.explore .viewAllDestinations button:hover {
+  background-color: rgba(164, 164, 164, 0.8);
+}
+
+.stayInTouch {
+  background: url("../assets/curve.png") no-repeat;
+  /*
+    background-color: #faf4f2;
+    */
+  background-color: #f8e1db;
+  width: 1500px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.stayInTouch .stayInTouchContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stayInTouch .stayInTouchLeft {
+  padding: 30px 0 0 80px;
+}
+
+.stayInTouch .stayInTouchLeft h1 {
+  margin-top: 30px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  color: #3b3735;
+}
+
+.stayInTouch .stayInTouchLeft p {
+  font-family: "Sawarabi Gothic", sans-serif;
+  font-size: 16px;
+  color: #3b3735;
+  width: 500px;
+}
+
+.stayInTouch input {
+  border: none;
+  border-radius: 15px;
+  padding: 30px 420px 30px 40px;
+}
+
+.stayInTouch button {
+  border: none;
+  background-color: white;
+  position: relative;
+  top: 76px;
+  left: -88px;
+}
+
+.stayInTouch .stayInTouchRight {
+  padding: 10px 0 10px 90px;
+}
+
+footer {
+  position: relative;
+  margin-top: 100px;
+  background-color: #f8e1db;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer h4 {
+  font-family: "Archivo Black", sans-serif;
+  margin: 20px 0 20px 0;
+}
+
+footer li, footer p {
+  font-family: "Sawarabi Gothic", sans-serif;
+}
+
+footer li {
+  line-height: 30px;
+}
+
+footer p {
+  line-height: 25px;
+  padding-bottom: 10px;
+}
+
+footer .footerColumns {
+  margin-top: 50px;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .hipCampDescription {
+  width: 50%;
+  padding-right: 100px;
+}
+
+footer .getToKnowUs {
+  padding-right: 40px;
+}
+
+footer .planWithUs {
+  padding-right: 40px;
+}
+
+footer .footerUp {
+  position: absolute;
+  top: -18%;
+  left: 86%;
+}
+
+footer .copyright {
+  margin-top: 50px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

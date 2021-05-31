@@ -1,0 +1,15 @@
+{ "destinations": [
+{ "destinationName": "Trickle Creek Ranch", "destinationImage": "11" },
+{ "destinationName": "Dragonfly Tiny Cabin", "destinationImage": "2" },
+{ "destinationName": "Tiny Cabin in the mountains", "destinationImage": "5" },
+{ "destinationName": "The Stuga", "destinationImage": "8" },
+{ "destinationName": "Luxury Tiny Beach Cabin", "destinationImage": "12" },
+{ "destinationName": "The Summit Cabin", "destinationImage": "3" },
+{ "destinationName": "Kindred Spirits Cabin", "destinationImage": "6" },
+{ "destinationName": "The Hermitage Cabin", "destinationImage": "9" },
+{ "destinationName": "Red Lifeguard Stand", "destinationImage": "1" },
+{ "destinationName": "The Tree House", "destinationImage": "4" },
+{ "destinationName": "Barrier island elevated tent", "destinationImage": "7" },
+{ "destinationName": "Ninovan on the Shore", "destinationImage": "10" }
+] }
+
