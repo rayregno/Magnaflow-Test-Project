@@ -44,6 +44,12 @@ body {
   padding: 0px 20px;
 }
 
+.top .nav_links li .currentNav {
+  background-image: url("../assets/nav-slash.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .top li, .top a, .top button {
   font-family: "Sawarabi Gothic", sans-serif;
   font-weight: 100;
@@ -73,10 +79,12 @@ body {
   border-radius: 50px;
   cursor: pointer;
   margin-left: 50px;
+  -webkit-transition: background-color 700ms ease-in-out;
+  transition: background-color 700ms ease-in-out;
 }
 
 .top .signin button:hover {
-  background-color: rgba(0, 135, 169, 0.8);
+  background-color: rgba(0, 135, 169, 0.5);
 }
 
 .top .callToAction {
@@ -102,6 +110,8 @@ body {
   font-family: "Sawarabi Gothic", sans-serif;
   color: white;
   line-height: 30px;
+  width: 80%;
+  margin: auto;
 }
 
 .top .discover {
@@ -157,6 +167,8 @@ body {
   font-family: "Sawarabi Gothic", sans-serif;
   font-size: 12px;
   line-height: 18px;
+  width: 80%;
+  margin: auto;
 }
 
 .explore {
@@ -247,10 +259,13 @@ body {
   background-color: #f3f3f3;
   border-radius: 50px;
   cursor: pointer;
+  -webkit-transition: background-color 700ms ease-in-out, color 700ms ease-in-out;
+  transition: background-color 700ms ease-in-out, color 700ms ease-in-out;
 }
 
 .explore .readMore button:hover {
   background-color: rgba(164, 164, 164, 0.8);
+  color: white;
 }
 
 .explore .exploreFooter {
@@ -273,10 +288,13 @@ body {
   background-color: transparent;
   border-radius: 50px;
   cursor: pointer;
+  -webkit-transition: background-color 700ms ease, color 700ms ease;
+  transition: background-color 700ms ease, color 700ms ease;
 }
 
 .explore .viewAllDestinations button:hover {
-  background-color: rgba(164, 164, 164, 0.8);
+  background-color: #e76f51;
+  color: white;
 }
 
 .stayInTouch {
@@ -317,7 +335,8 @@ body {
 .stayInTouch input {
   border: none;
   border-radius: 15px;
-  padding: 30px 420px 30px 40px;
+  padding: 30px 400px 30px 50px;
+  color: #333;
 }
 
 .stayInTouch button {
@@ -326,6 +345,12 @@ body {
   position: relative;
   top: 76px;
   left: -88px;
+}
+
+.stayInTouch .emailIcon {
+  position: relative;
+  top: -44px;
+  left: 30px;
 }
 
 .stayInTouch .stayInTouchRight {
@@ -395,5 +420,6 @@ footer .footerUp {
 footer .copyright {
   margin-top: 50px;
   text-align: center;
+  padding-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@
                 <img class="logo" src="assets/logo.png" alt="logo">
                 <nav>
                     <ul class="nav_links">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="currentNav">Home</a></li>
                         <li><a href="#">Destination</a></li>
                         <li><a href="#">Near me</a></li>
                         <li><a href="#">Events</a></li>
@@ -75,6 +75,7 @@
             </div>
 
             <div class="exploreStuff">
+                <script src="hipScripts.js"></script>
 
         <?
             // READ JSON file
@@ -92,11 +93,34 @@
                 $destinationImage = $destination->destinationImage;
 
                 echo "
+                                <script>
+                                    function like".$destinationImage."()
+                                    {
+                                        var theImgObj = document.getElementById('destinationImage".$destinationImage."');
+                                        var currentImg = theImgObj.src;
+                                        if(currentImg.includes('empty'))
+                                        {
+                                           theImgObj.src = 'assets/heart-filled.png';
+                                        }
+                                        else
+                                        {
+                                           theImgObj.src = 'assets/heart-empty.png';
+                                        }
+                                    }
+
+                                </script>
                         <div class=\"exploreThing\">
                          <div class=\"exploreThingImg\">
                                 <img src=\"assets/image-K-" . $destinationImage . ".png\" alt=\"" . $destinationName . "\"\>
                                 <p class=\"exploreThingPrice\">$35/night</p>
-                                <div class=\"exploreThingLike\"><a href=\"#\" alt=\"Like\"><img src=\"assets/heart-empty.png\"></a></div>
+                                <div class=\"exploreThingLike\">
+                                    <a href=\"javascript:void(0)\" onclick=\"like" .$destinationImage . "();\" alt=\"Like\">
+                                        <!--
+                                        <img id=\"destinationImage" . $destinationImage . "\" src=\"assets/heart-empty.png\" onmouseover=\"this.src='assets/heart-filled.png'\" onmouseout=\"this.src='assets/heart-empty.png'\" onclick=\"this.src='assets/heart-filled.png'\">
+                                        -->
+                                        <img id=\"destinationImage" . $destinationImage . "\" src=\"assets/heart-empty.png\"> 
+                                    </a>
+                                </div>
                             </div>
                             <h3>" . $destinationName . "</h3>
                             <div class=\"exploreThingDetails\">
@@ -122,6 +146,7 @@
                     <form action="">
                         <input type="email" placeholder="Email Address"><button type="submit" class="submitButton"><span class="submitButtonIcon"><img src="assets/submit.png"></span></button>
                     </form>
+                    <div class="emailIcon"><img src="assets/email-icon.png"></div>
 
                 </div>
                 <div class="stayInTouchRight">

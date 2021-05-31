@@ -45,6 +45,12 @@ body{
         padding: 0px 20px;
     }
 
+    .nav_links li .currentNav {
+        background-image: url('../assets/nav-slash.png') ;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     li, a, button {
         font-family: $primaryFont;
         font-weight: 100;
@@ -73,10 +79,11 @@ body{
         border-radius: 50px;
         cursor: pointer;
         margin-left: 50px;
+        transition: background-color 700ms ease-in-out;
     }
 
     .signin button:hover{
-        background-color: rgba(0,135,169,0.8);
+        background-color: rgba(0,135,169,0.5);
     }
 
 
@@ -101,6 +108,8 @@ body{
         font-family: $primaryFont;
         color: white;
         line-height: 30px;
+        width: 80%;
+        margin: auto;
     }
 
     .discover {
@@ -152,6 +161,8 @@ body{
         font-family: $primaryFont;
         font-size: 12px;
         line-height: 18px;
+        width: 80%;
+        margin: auto;
     }
 }
 
@@ -238,10 +249,12 @@ body{
         background-color: #f3f3f3;
         border-radius: 50px;
         cursor: pointer;
+        transition: background-color 700ms ease-in-out, color 700ms ease-in-out;
     }
 
     .readMore button:hover{
         background-color: rgba(164,164,164,0.8);
+        color: white;
     }
 
     .exploreFooter {
@@ -264,11 +277,13 @@ body{
         background-color: transparent;
         border-radius: 50px;
         cursor: pointer;
+        transition: background-color 700ms ease, color 700ms ease;
     }
 
 
     .viewAllDestinations button:hover{
-        background-color: rgba(164,164,164,0.8);
+        background-color: $orange;
+        color: white;
     }
 }
 
@@ -308,7 +323,8 @@ body{
     input {
         border: none;
         border-radius: 15px;
-        padding: 30px 420px 30px 40px;
+        padding: 30px 400px 30px 50px;
+        color: #333;
 
     }
 
@@ -318,6 +334,13 @@ body{
         position: relative;
         top: 76px;
         left: -88px;
+
+    }
+
+    .emailIcon {
+        position: relative;
+        top: -44px;
+        left: 30px;
 
     }
 
@@ -392,6 +415,7 @@ footer {
         .copyright {
             margin-top: 50px;
             text-align: center;
+            padding-bottom: 50px;
         }
 
 
