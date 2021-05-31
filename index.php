@@ -182,9 +182,5 @@
                 <a href="#top"><img src="assets/up.png" alt="Back to Top"></a>
             </div>
         </footer>
-test
-
-
-
     </body>
 </html>
